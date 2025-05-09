@@ -1,0 +1,12 @@
+<ul (keydown)="onKeydown($event)">
+  <li
+    *ngFor="let item of items; let i = index"
+    appFocusableItem
+    [class.active]="keyManager?.activeItemIndex === i"
+    (click)="selectItem(item)"
+    tabindex="-1"
+    #item
+  >
+    {{ item }}
+  </li>
+</ul>

@@ -1,0 +1,9 @@
+.active {
+    background-color: #007acc;
+    color: white;
+  }
+  li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
